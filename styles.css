@@ -83,7 +83,7 @@ header {
 /* --- UNIFORM IMAGE HANDLING --- */
 .image-container-wide img {
     width: 100%;
-    height: 450px;
+    height: 350px;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -142,4 +142,33 @@ footer {
 @media (max-width: 600px) {
     .image-container-wide img { height: 200px; }
     header { padding: 30px 0; }
+}
+
+/* Container for the image to maintain uniform size */
+.team-img-container {
+    width: 30%;
+    height: 10px; /* Set your desired fixed height here */
+    overflow: hidden; /* Hides parts of the image that don't fit */
+    background-color: #f0f0f0; /* Placeholder color while loading */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The image itself */
+.team-img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover; /* Crops the image to fill the box without stretching */
+    object-position: center; /* Keeps the center of the photo visible */
+    display: block;
+}
+
+/* Optional: Add a slight padding or border to the cards to make them pop */
+.team-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    overflow: hidden; /* Ensures image corners match card corners */
 }
