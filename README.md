@@ -1,1 +1,1 @@
-# cricket-updates
+# cricket-updates 2026
