@@ -3,87 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuskomet Cricket Hub</title>
+    <title>TuS Komet Arsten Cricket | News, Scores &amp; Results</title>
+    <meta name="description" content="Official cricket section of TuS Komet Arsten, Bremen. Latest news, match results, TPL standings and photo galleries.">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Essential inline styles for the banner integration */
-        header {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/banner.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: white;
-            padding: 80px 0; /* Provides height for the banner */
-            text-align: center;
-        }
-    </style>
+    <script src="main.js" defer></script>
 </head>
 <body>
 
-    <header>
+    <!-- SCORE TICKER -->
+    <div class="ticker">
         <div class="container">
-            <h1>TUS KOMET ARSTEN</h1>
-            <p>Official Cricket Updates</p>
+            <div class="ticker-label">TPL 2026</div>
+            <div class="ticker-track">
+                <a class="score-chip" href="tpl2026results.html#matches">
+                    <span class="meta">Match 1 &middot; Result</span>
+                    <span class="row win"><span>Knights</span><span>103</span></span>
+                    <span class="row lose"><span>CSK</span><span>63</span></span>
+                </a>
+                <a class="score-chip" href="tpl2026results.html#matches">
+                    <span class="meta">Match 2 &middot; Result</span>
+                    <span class="row win"><span>Titans</span><span>133</span></span>
+                    <span class="row lose"><span>CSK</span><span>130</span></span>
+                </a>
+                <a class="score-chip" href="tpl2026results.html#matches">
+                    <span class="meta">Match 3 &middot; Result</span>
+                    <span class="row win"><span>Knights</span><span>138</span></span>
+                    <span class="row lose"><span>Titans</span><span>51</span></span>
+                </a>
+                <a class="score-chip" href="tpl2026results.html#matches">
+                    <span class="meta">Match 4 &middot; Result</span>
+                    <span class="row win"><span>Knights</span><span>134</span></span>
+                    <span class="row lose"><span>CSK</span><span>97</span></span>
+                </a>
+                <a class="score-chip" href="tpl2026results.html#matches">
+                    <span class="meta">Match 5 &middot; Result</span>
+                    <span class="row win"><span>Titans</span><span>85</span></span>
+                    <span class="row lose"><span>CSK</span><span>84</span></span>
+                </a>
+                <a class="score-chip" href="tpl2026results.html#matches">
+                    <span class="meta">Match 6 &middot; Result</span>
+                    <span class="row win"><span>Titans</span><span>111</span></span>
+                    <span class="row lose"><span>Knights</span><span>110</span></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="brand">
+                <img src="images/logo.png" alt="TuS Komet Arsten crest">
+                <span class="brand-text"><strong>TuS Komet Arsten</strong><span>Cricket</span></span>
+            </a>
+            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav"><span></span></button>
+            <nav class="main-nav" id="main-nav">
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="tpl2026results.html">Results</a>
+                <a href="2026_indoor.html">Match Centre</a>
+                <a href="2026_auction.html">Squads</a>
+                <a href="tpl2026results.html#gallery">Gallery</a>
+            </nav>
         </div>
     </header>
 
-    <main class="container">
-        
-        <h2 class="section-title">📰 News & Reports</h2>
-        <div class="grid-layout">
-
-            <a href="tpl2026results.html" class="event-card">
-                <div class="card-banner" style="background-image: url('images/tpl2026/winners.jpg'); background-position: center top;">
-                    <span class="status-tag">Champions</span>
-                </div>
-                <div class="card-content">
-                    <h3>🏆 TPL 2026 Results</h3>
-                    <p>Knights take the trophy! See the full points table and photo gallery.</p>
-                    <span class="btn-link">View Results →</span>
+    <main>
+        <!-- HERO -->
+        <section class="container hero">
+            <a href="tpl2026results.html" class="hero-main" style="background-image: url('images/tpl2026/winners.jpg');">
+                <div class="hero-body">
+                    <span class="tag gold">Champions</span>
+                    <h1>Knights crowned TPL 2026 champions</h1>
+                    <p>Knights edge Titans on net run rate (+3.8) after a dramatic final day of indoor cricket in Bremen.</p>
                 </div>
             </a>
 
-            <a href="2026_auction.html" class="event-card">
-                <div class="card-banner" style="background-image: url('images/tpl2026/owners.jpg'); background-color: #444;">
-                    <span class="status-tag">Recap</span>
-                </div>
-                <div class="card-content">
-                    <h3>TPL 2026 Auction Recap</h3>
-                    <p>Full squad lists, owner details, and auction highlights.</p>
-                    <span class="btn-link">Read Full Report →</span>
-                </div>
-            </a>
+            <div class="hero-side">
+                <a href="2026_auction.html" class="side-story">
+                    <img src="images/tpl2026/owners.jpg" alt="TPL franchise owners">
+                    <div>
+                        <span class="tag">Auction</span>
+                        <h3>TPL 2026 auction recap: every squad revealed</h3>
+                    </div>
+                </a>
+                <a href="2026_indoor.html" class="side-story">
+                    <img src="images/tpl2026/tpl1.jpg" alt="Indoor tournament action">
+                    <div>
+                        <span class="tag">Match Centre</span>
+                        <h3>Indoor Tournament: final standings &amp; results</h3>
+                    </div>
+                </a>
+                <a href="tpl2026results.html#gallery" class="side-story">
+                    <img src="images/tpl2026/trophies.jpg" alt="TPL trophies">
+                    <div>
+                        <span class="tag">Gallery</span>
+                        <h3>In pictures: the best moments from finals day</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
 
-            <div class="event-card">
-                <div class="card-content">
-                    <h3>+ Add New Update</h3>
-                    <p>Coming Soon: Summer League Fixtures 2026.</p>
+        <!-- LATEST NEWS + STANDINGS -->
+        <section class="container section">
+            <div class="split">
+                <div>
+                    <div class="section-head">
+                        <h2 class="section-title">Latest News</h2>
+                    </div>
+                    <div class="news-grid">
+                        <a href="tpl2026results.html" class="news-card">
+                            <div class="thumb" style="background-image: url('images/tpl2026/knights.jpg');"></div>
+                            <div class="body">
+                                <span class="tag">TPL 2026</span>
+                                <h3>Knights win three from four to claim the title</h3>
+                                <p>Full points table, every scorecard and the finals-day gallery.</p>
+                                <span class="date">1 February 2026</span>
+                            </div>
+                        </a>
+                        <a href="2026_auction.html" class="news-card">
+                            <div class="thumb" style="background-image: url('images/tpl2026/titans.jpg');"></div>
+                            <div class="body">
+                                <span class="tag">Squads</span>
+                                <h3>Meet the squads: Titans, CSK &amp; Knights</h3>
+                                <p>Owners, players and auction highlights for all three franchises.</p>
+                                <span class="date">25 January 2026</span>
+                            </div>
+                        </a>
+                        <div class="news-card placeholder">
+                            <div class="body">
+                                <span class="tag">Coming Soon</span>
+                                <h3>Summer League fixtures 2026</h3>
+                                <p>Fixtures will be published here once confirmed.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="widget">
+                    <div class="widget-head">TPL 2026 Standings</div>
+                    <table class="points-table">
+                        <thead>
+                            <tr><th>Team</th><th class="num">P</th><th class="num">W</th><th class="num">Pts</th><th class="num">NRR</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr class="top-team"><td>1. Knights</td><td class="num">4</td><td class="num">3</td><td class="num">6</td><td class="num">+3.8</td></tr>
+                            <tr><td>2. Titans</td><td class="num">4</td><td class="num">3</td><td class="num">6</td><td class="num">-0.5</td></tr>
+                            <tr><td>3. CSK</td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">-3.4</td></tr>
+                        </tbody>
+                    </table>
+                    <a href="tpl2026results.html" class="widget-foot">Full table &rarr;</a>
+                </aside>
+            </div>
+        </section>
+
+        <!-- VIDEO -->
+        <section class="video-band">
+            <div class="container">
+                <div class="section-head">
+                    <h2 class="section-title">Video</h2>
+                </div>
+                <div class="video-wrap">
+                    <video controls preload="metadata" poster="images/tpl2026/owners.jpg">
+                        <source src="images/tpl2026/Auction1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div>
+                        <span class="tag solid">Watch</span>
+                        <h3>Inside the TPL 2026 auction</h3>
+                        <p>The bidding, the drama and the moment each franchise locked in its squad.</p>
+                    </div>
                 </div>
             </div>
+        </section>
 
-        </div>
-        
-        <h2 class="section-title">🔥 Active Events</h2>
-        <div class="grid-layout">
-            
-            <a href="2026_indoor.html" class="event-card">
-                <div class="card-banner" style="background-image: url('images/indoor_bg.jpg'); background-color: #333;">
-                    <span class="status-tag">Live Feb 1st</span>
-                </div>
-                <div class="card-content">
-                    <h3>2026 Indoor Tournament</h3>
-                    <p>Live Match Center, Points Table, and Schedule for the upcoming indoor cup.</p>
-                    <span class="btn-link">Open Match Center →</span>
-                </div>
-            </a>
-
-        </div>
-
+        <!-- GALLERY STRIP -->
+        <section class="container section">
+            <div class="section-head">
+                <h2 class="section-title">Photos</h2>
+                <a href="tpl2026results.html#gallery" class="section-link">View gallery &rarr;</a>
+            </div>
+            <div class="gallery">
+                <a href="images/tpl2026/tpl2.jpg"><img src="images/tpl2026/tpl2.jpg" alt="TPL 2026 match action" loading="lazy"></a>
+                <a href="images/tpl2026/tpl3.jpg"><img src="images/tpl2026/tpl3.jpg" alt="TPL 2026 match action" loading="lazy"></a>
+                <a href="images/tpl2026/tpl4.jpg"><img src="images/tpl2026/tpl4.jpg" alt="TPL 2026 match action" loading="lazy"></a>
+                <a href="images/tpl2026/tpl6.jpg"><img src="images/tpl2026/tpl6.jpg" alt="TPL 2026 match action" loading="lazy"></a>
+            </div>
+        </section>
     </main>
 
-    <footer>
+    <!-- FOOTER -->
+    <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2026 TuS Komet Arsten Cricket</p>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="brand">
+                        <img src="images/logo.png" alt="">
+                        <span class="brand-text"><strong>TuS Komet Arsten</strong><span>Cricket</span></span>
+                    </a>
+                    <p>The cricket section of TuS Komet Arsten e.V., Bremen. Indoor and outdoor cricket for all levels.</p>
+                </div>
+                <div>
+                    <h4>Competitions</h4>
+                    <ul>
+                        <li><a href="tpl2026results.html">TPL 2026 Results</a></li>
+                        <li><a href="2026_indoor.html">Indoor Match Centre</a></li>
+                        <li><a href="2026_auction.html">Squads &amp; Auction</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Club</h4>
+                    <ul>
+                        <li><a href="tpl2026results.html#gallery">Gallery</a></li>
+                        <li>Bremen, Germany</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copy">&copy; 2026 TuS Komet Arsten Cricket</p>
         </div>
     </footer>
 

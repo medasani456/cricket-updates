@@ -3,109 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TPL 2026 Auction Recap | Tuskomet Cricket</title>
+    <title>TPL 2026 Auction Recap &amp; Squads | TuS Komet Arsten Cricket</title>
+    <meta name="description" content="TPL 2026 auction recap: franchise owners and full squads for Titans, CSK and Knights.">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
-    
-    <nav class="breadcrumb">
+
+    <header class="site-header">
         <div class="container">
-            <a href="index.html">← Home</a>
-        </div>
-    </nav>
-    
-    <header>
-        <div class="container">
-            <h1>TPL 2026: The Auction Recap</h1>
-            <p>January 25, 2026 | Bremen, Germany</p>
+            <a href="index.html" class="brand">
+                <img src="images/logo.png" alt="TuS Komet Arsten crest">
+                <span class="brand-text"><strong>TuS Komet Arsten</strong><span>Cricket</span></span>
+            </a>
+            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav"><span></span></button>
+            <nav class="main-nav" id="main-nav">
+                <a href="index.html">Home</a>
+                <a href="tpl2026results.html">Results</a>
+                <a href="2026_indoor.html">Match Centre</a>
+                <a href="2026_auction.html" aria-current="page">Squads</a>
+                <a href="tpl2026results.html#gallery">Gallery</a>
+            </nav>
         </div>
     </header>
 
+    <section class="page-hero" style="background-image: url('images/tpl2026/owners.jpg');">
+        <div class="container">
+            <div class="crumbs"><a href="index.html">Home</a> / Squads</div>
+            <h1>TPL 2026: The Auction Recap</h1>
+            <p>25 January 2026 &middot; Bremen, Germany</p>
+        </div>
+    </section>
+
     <main class="container">
-        
-        <section style="margin-top: 40px; margin-bottom: 40px;">
-            
-            <h2 style="color: var(--primary); margin-top: 20px;">Meet the Franchise Owners</h2>
-            <p>The league is led by three passionate owners: <strong>Chandni Sidhu</strong> (TITAN), <strong>Latha</strong> (KNIGHTS), and <strong>Sushma</strong> (CSK). Their strategic bidding has set the stage for an epic tournament.</p>
-			<div class="image-container-wide">
-                <img src="images/tpl2026/owners.jpg" alt="TPL Owners">
+
+        <section class="section">
+            <div class="section-head">
+                <h2 class="section-title">Meet the Franchise Owners</h2>
+            </div>
+            <div class="article">
+                <p>The league is led by three passionate owners: <strong>Chandni Sidhu</strong> (Titans), <strong>Latha</strong> (Knights) and <strong>Sushma</strong> (CSK). Their strategic bidding set the stage for an epic tournament.</p>
+                <img src="images/tpl2026/owners.jpg" alt="TPL franchise owners">
             </div>
         </section>
 
-        <h2 class="section-title">Final Team Squads</h2>
-        <div class="team-grid">
-            
-            <div class="team-card">
-                <div class="team-img-box">
-                    <img src="images/tpl2026/titans.jpg" alt="Team Titans">
+        <section class="section">
+            <div class="section-head">
+                <h2 class="section-title">Final Team Squads</h2>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="images/tpl2026/titans.jpg" alt="Team Titans" loading="lazy">
+                    <div class="card-body">
+                        <h3>Titans</h3>
+                        <p class="owner-name">Owner: Chandni Sidhu</p>
+                        <ul class="player-list">
+                            <li>Jay</li>
+                            <li>Ajay</li>
+                            <li>Nitin Rana</li>
+                            <li>Rizwan</li>
+                            <li>Ayman</li>
+                            <li>Sai</li>
+                            <li>Teja</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <h3>TITAN</h3>
-                    <p style="color: #666; font-size: 0.9rem;">Owner: Chandni Sidhu</p>
-                    <ul class="player-list">
-                        <li><strong>Jay </strong></li>
-                        <li>Ajay </li>
-                        <li>Nitin Rana </li>
-                        <li>Rizwan </li>
-                        <li>Ayman </li>
-                        <li>Sai </li>
-                        <li>Teja </li>
-                    </ul>
+
+                <div class="team-card">
+                    <img src="images/tpl2026/csk.jpg" alt="Team CSK" loading="lazy">
+                    <div class="card-body">
+                        <h3>CSK</h3>
+                        <p class="owner-name">Owner: Sushma</p>
+                        <ul class="player-list">
+                            <li>Anil</li>
+                            <li>Sunny</li>
+                            <li>Sanjay</li>
+                            <li>Ayush</li>
+                            <li>Yogesh</li>
+                            <li>Om</li>
+                            <li>Junaid</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <img src="images/tpl2026/knights.jpg" alt="Team Knights" loading="lazy">
+                    <div class="card-body">
+                        <h3>Knights</h3>
+                        <p class="owner-name">Owner: Latha</p>
+                        <ul class="player-list">
+                            <li>Vedant</li>
+                            <li>Swaresh</li>
+                            <li>Rajgopal</li>
+                            <li>Jaya</li>
+                            <li>Vipul</li>
+                            <li>Harsh</li>
+                            <li>Venkat</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="team-card">
-                <div class="team-img-box">
-                    <img src="images/tpl2026/csk.jpg" alt="Team CSK">
-                </div>
-                <div class="card-body">
-                    <h3>CSK</h3>
-                    <p style="color: #666; font-size: 0.9rem;">Owner: Sushma</p>
-                    <ul class="player-list">
-                        <li>Anil </li>
-                        <li>Sunny </li>
-                        <li>Sanjay </li>
-                        <li>Ayush </li>
-                        <li>Yogesh </li>
-                        <li>Om </li>
-                        <li>Junaid </li>
-                    </ul>
-                </div>
+        <section class="section">
+            <div class="section-head">
+                <h2 class="section-title">The Prize</h2>
+                <a href="tpl2026results.html" class="section-link">Who won? &rarr;</a>
             </div>
-
-            <div class="team-card">
-                <div class="team-img-box">
-                    <img src="images/tpl2026/knights.jpg" alt="Team Knights">
-                </div>
-                <div class="card-body">
-                    <h3>KNIGHTS</h3>
-                    <p style="color: #666; font-size: 0.9rem;">Owner: Latha</p>
-                    <ul class="player-list">
-                        <li>Vedant </li>
-                        <li>Swaresh </li>
-                        <li>Rajgopal </li>
-                        <li>Jaya </li>
-                        <li>Vipul </li>
-                        <li>Harsh </li>
-                        <li>Venkat </li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-
-        <section style="margin-top: 60px; text-align: center;">
-            <h2 class="section-title" style="text-align: left;">The Prize</h2>
-            <div style="max-width: 600px; margin: 0 auto;">
-                <img src="images/tpl2026/trophies.jpg" alt="TPL Trophy" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow);">
-                <p style="margin-top: 15px; font-weight: bold; font-size: 1.2rem;">Who will take this home on February 1st? 🏆</p>
+            <div class="article" style="max-width: 720px;">
+                <img src="images/tpl2026/trophies.jpg" alt="TPL trophies" loading="lazy">
+                <p style="margin-top: 14px;"><strong>Knights</strong> took the trophy home on 1 February 2026. 🏆</p>
             </div>
         </section>
 
     </main>
 
-    <footer>
-        <p>&copy; 2026 TuS Komet Cricket Updates</p>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="brand">
+                        <img src="images/logo.png" alt="">
+                        <span class="brand-text"><strong>TuS Komet Arsten</strong><span>Cricket</span></span>
+                    </a>
+                    <p>The cricket section of TuS Komet Arsten e.V., Bremen. Indoor and outdoor cricket for all levels.</p>
+                </div>
+                <div>
+                    <h4>Competitions</h4>
+                    <ul>
+                        <li><a href="tpl2026results.html">TPL 2026 Results</a></li>
+                        <li><a href="2026_indoor.html">Indoor Match Centre</a></li>
+                        <li><a href="2026_auction.html">Squads &amp; Auction</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Club</h4>
+                    <ul>
+                        <li><a href="tpl2026results.html#gallery">Gallery</a></li>
+                        <li>Bremen, Germany</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copy">&copy; 2026 TuS Komet Arsten Cricket</p>
+        </div>
     </footer>
+
 </body>
 </html>

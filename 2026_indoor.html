@@ -3,129 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Match Center | 2026 Indoor Tournament</title>
+    <title>Match Centre | 2026 Indoor Tournament | TuS Komet Arsten Cricket</title>
+    <meta name="description" content="2026 Indoor Tournament match centre: final standings and results.">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
-    
-    <nav class="breadcrumb">
+
+    <header class="site-header">
         <div class="container">
-            <a href="index.html">← Home</a>
-        </div>
-    </nav>
-    
-    <header>
-        <div class="container">
-            <h1>🏆 2026 Indoor Tournament</h1>
-            <p>Live Match Center | February 1st, 2026 | 09:00 - 16:00</p>
+            <a href="index.html" class="brand">
+                <img src="images/logo.png" alt="TuS Komet Arsten crest">
+                <span class="brand-text"><strong>TuS Komet Arsten</strong><span>Cricket</span></span>
+            </a>
+            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav"><span></span></button>
+            <nav class="main-nav" id="main-nav">
+                <a href="index.html">Home</a>
+                <a href="tpl2026results.html">Results</a>
+                <a href="2026_indoor.html" aria-current="page">Match Centre</a>
+                <a href="2026_auction.html">Squads</a>
+                <a href="tpl2026results.html#gallery">Gallery</a>
+            </nav>
         </div>
     </header>
 
+    <section class="page-hero" style="background-image: url('images/tpl2026/tpl1.jpg');">
+        <div class="container">
+            <div class="crumbs"><a href="index.html">Home</a> / Match Centre</div>
+            <h1>2026 Indoor Tournament</h1>
+            <p>Match Centre &middot; 1 February 2026 &middot; 09:00 &ndash; 16:00 &middot; Tournament concluded</p>
+        </div>
+    </section>
+
     <main class="container">
-        
-        <h2 class="section-title">Final Standings</h2>
-        <div class="table-wrapper">
-            <table class="points-table">
-                <thead>
-                    <tr>
-                        <th>Rank</th>
-                        <th>Team</th>
-                        <th>Played</th>
-                        <th>Won</th>
-                        <th>Lost</th>
-                        <th>Points</th>
-                        <th>NRR</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="top-team">
-                        <td>1</td>
-                        <td><strong>KNIGHTS</strong> 🏆</td>
-                        <td>4</td>
-                        <td>3</td>
-                        <td>1</td>
-                        <td>6</td>
-                        <td>+3.8</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td><strong>TITAN</strong></td>
-                        <td>4</td>
-                        <td>3</td>
-                        <td>1</td>
-                        <td>6</td>
-                        <td>-0.5</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td><strong>CSK</strong></td>
-                        <td>4</td>
-                        <td>0</td>
-                        <td>4</td>
-                        <td>0</td>
-                        <td>-3.4</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p style="font-size: 0.85rem; color: #666; margin-top: 10px;">* Knights won via superior Net Run Rate.</p>
-        </div>
 
-        <h2 class="section-title">Match Results</h2>
-        <div class="match-list">
-            
-            <div class="match-card">
-                <div class="match-status" style="color: var(--club-red);">Finished</div>
-                <div class="match-info">Match 1</div>
-                <div class="match-teams">
-                    <span>Knights (103)</span> def. <span>CSK (63)</span>
+        <section class="section">
+            <div class="section-head">
+                <h2 class="section-title">Final Standings</h2>
+            </div>
+            <div class="table-wrapper">
+                <table class="points-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Team</th>
+                            <th class="num">Played</th>
+                            <th class="num">Won</th>
+                            <th class="num">Lost</th>
+                            <th class="num">Points</th>
+                            <th class="num">NRR</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="top-team">
+                            <td>1</td>
+                            <td>KNIGHTS 🏆</td>
+                            <td class="num">4</td>
+                            <td class="num">3</td>
+                            <td class="num">1</td>
+                            <td class="num">6</td>
+                            <td class="num">+3.8</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>TITANS</td>
+                            <td class="num">4</td>
+                            <td class="num">3</td>
+                            <td class="num">1</td>
+                            <td class="num">6</td>
+                            <td class="num">-0.5</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>CSK</td>
+                            <td class="num">4</td>
+                            <td class="num">0</td>
+                            <td class="num">4</td>
+                            <td class="num">0</td>
+                            <td class="num">-3.4</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="table-note">* Knights won via superior Net Run Rate.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-head">
+                <h2 class="section-title">Match Results</h2>
+                <a href="tpl2026results.html" class="section-link">Full report &rarr;</a>
+            </div>
+            <div class="match-list">
+                <div class="match-card">
+                    <div class="match-meta"><span>Match 1</span><span class="status">Finished</span></div>
+                    <div class="team-row win"><span class="name">Knights</span><span>103</span></div>
+                    <div class="team-row"><span class="name">CSK</span><span>63</span></div>
+                </div>
+                <div class="match-card">
+                    <div class="match-meta"><span>Match 2</span><span class="status">Finished</span></div>
+                    <div class="team-row win"><span class="name">Titans</span><span>133</span></div>
+                    <div class="team-row"><span class="name">CSK</span><span>130</span></div>
+                </div>
+                <div class="match-card">
+                    <div class="match-meta"><span>Match 3</span><span class="status">Finished</span></div>
+                    <div class="team-row win"><span class="name">Knights</span><span>138</span></div>
+                    <div class="team-row"><span class="name">Titans</span><span>51</span></div>
+                </div>
+                <div class="match-card">
+                    <div class="match-meta"><span>Match 4</span><span class="status">Finished</span></div>
+                    <div class="team-row win"><span class="name">Knights</span><span>134</span></div>
+                    <div class="team-row"><span class="name">CSK</span><span>97</span></div>
+                </div>
+                <div class="match-card">
+                    <div class="match-meta"><span>Match 5</span><span class="status">Finished</span></div>
+                    <div class="team-row win"><span class="name">Titans</span><span>85</span></div>
+                    <div class="team-row"><span class="name">CSK</span><span>84</span></div>
+                </div>
+                <div class="match-card">
+                    <div class="match-meta"><span>Match 6</span><span class="status">Finished</span></div>
+                    <div class="team-row win"><span class="name">Titans</span><span>111</span></div>
+                    <div class="team-row"><span class="name">Knights</span><span>110</span></div>
                 </div>
             </div>
+        </section>
 
-            <div class="match-card">
-                <div class="match-status" style="color: var(--club-red);">Finished</div>
-                <div class="match-info">Match 2</div>
-                <div class="match-teams">
-                    <span>Titans (133)</span> def. <span>CSK (130)</span>
-                </div>
-            </div>
-
-            <div class="match-card">
-                <div class="match-status" style="color: var(--club-red);">Finished</div>
-                <div class="match-info">Match 3</div>
-                <div class="match-teams">
-                    <span>Knights (138)</span> def. <span>Titans (51)</span>
-                </div>
-            </div>
-
-            <div class="match-card">
-                <div class="match-status" style="color: var(--club-red);">Finished</div>
-                <div class="match-info">Match 4</div>
-                <div class="match-teams">
-                    <span>Knights (134)</span> def. <span>CSK (97)</span>
-                </div>
-            </div>
-
-             <div class="match-card">
-                <div class="match-status" style="color: var(--club-red);">Finished</div>
-                <div class="match-info">Match 5</div>
-                <div class="match-teams">
-                    <span>Titans (85)</span> def. <span>CSK (84)</span>
-                </div>
-            </div>
-
-             <div class="match-card">
-                <div class="match-status" style="color: var(--club-red);">Finished</div>
-                <div class="match-info">Match 6</div>
-                <div class="match-teams">
-                    <span>Titans (111)</span> def. <span>Knights (110)</span>
-                </div>
-            </div>
-
-        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2026 TuS Komet Cricket Hub | Tournament Concluded</p>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="brand">
+                        <img src="images/logo.png" alt="">
+                        <span class="brand-text"><strong>TuS Komet Arsten</strong><span>Cricket</span></span>
+                    </a>
+                    <p>The cricket section of TuS Komet Arsten e.V., Bremen. Indoor and outdoor cricket for all levels.</p>
+                </div>
+                <div>
+                    <h4>Competitions</h4>
+                    <ul>
+                        <li><a href="tpl2026results.html">TPL 2026 Results</a></li>
+                        <li><a href="2026_indoor.html">Indoor Match Centre</a></li>
+                        <li><a href="2026_auction.html">Squads &amp; Auction</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Club</h4>
+                    <ul>
+                        <li><a href="tpl2026results.html#gallery">Gallery</a></li>
+                        <li>Bremen, Germany</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copy">&copy; 2026 TuS Komet Arsten Cricket</p>
+        </div>
     </footer>
+
 </body>
 </html>
