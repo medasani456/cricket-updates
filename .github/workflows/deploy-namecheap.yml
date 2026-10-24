@@ -3,11 +3,8 @@
 name: Deploy to Namecheap
 
 on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
+  # Manual only for now - the site is served from GitHub Pages (static.yml).
+  # To deploy on every push, add back:  push: branches: ["main"]
   workflow_dispatch:
 
 # Allow only one deployment at a time

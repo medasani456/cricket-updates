@@ -11,9 +11,16 @@ Static website for the TuS Komet Arsten cricket section, live at https://kometcr
 - `styles.css`, `main.js` â€“ shared styling and mobile menu
 - `images/` â€“ logo and event photos
 
-## Deployment (Namecheap hosting)
+## Deployment (GitHub Pages)
 
-Every push to `main` uploads the site to Namecheap via `.github/workflows/deploy-namecheap.yml`.
+Every push to `main` publishes the site to GitHub Pages via `.github/workflows/static.yml`:
+https://medasani456.github.io/cricket-updates/
+
+To use a custom domain later: repo **Settings → Pages → Custom domain**, then point the domain's DNS at GitHub Pages.
+
+## Optional: Namecheap hosting
+
+`.github/workflows/deploy-namecheap.yml` uploads the site to Namecheap over FTP. It currently runs only when started manually from the **Actions** tab.
 
 One-time setup:
 
